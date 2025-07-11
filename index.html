@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EcoRewards</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="Recicle, ganhe pontos e troque por prêmios. Faça parte do movimento sustentável!" />
+    <meta property="og:title" content="EcoRewards" />
+    <meta property="og:description" content="Recicle, ganhe pontos e troque por prêmios. Faça parte do movimento sustentável!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ecorewards.com" />
+    <meta property="og:image" content="https://ecorewards.com/img/og-image.jpg" />
+</head>
+<body>
+    <header class="header">
+            <div class="container header-flex">
+                <div class="logo" data-i18n="logo">EcoValor</div>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="#home" data-i18n="nav_home">Início</a></li>
+                        <li><a href="#how" data-i18n="nav_how">Como Funciona</a></li>
+                        <li><a href="#materials" data-i18n="nav_materials">Materiais</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn-login" data-i18n="btn_login">Entrar</button>
+                    <button class="btn-register" data-i18n="btn_register">Cadastrar</button>
+                    <div class="lang-switcher">
+                        <button id="lang-pt" class="lang-btn active">PT</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <h1 data-i18n="hero_title">Transforme Resíduos em Valor para a Sua Comunidade</h1>
+                <p data-i18n="hero_sub">Recicle, ganhe créditos e ajude Angola a ser mais limpa e sustentável. Cada garrafa, cada papel, cada lata vale dinheiro na sua conta.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" data-i18n="btn_start">PARTICIPE AGORA - É GRÁTIS</button>
+                    <button class="btn-secondary" data-i18n="btn_learn">SAIBA MAIS</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-project section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about_title">Construindo o Futuro Sustentável de Angola</h2>
+                <p class="section-subtitle" data-i18n="about_subtitle">O EcoValor é um projeto em desenvolvimento que visa criar um sistema de recompensas para reciclagem em Luanda, beneficiando tanto o meio ambiente quanto as comunidades locais.</p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-number">01</div>
+                        <h3 data-i18n="about_mission_title">Missão</h3>
+                        <p data-i18n="about_mission_desc">Transformar resíduos em valor real para as comunidades de Luanda, criando um sistema sustentável de reciclagem com recompensas tangíveis.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-number">02</div>
+                        <h3 data-i18n="about_vision_title">Visão</h3>
+                        <p data-i18n="about_vision_desc">Ser a principal plataforma de reciclagem em Angola, conectando comunidades, empresas e governo em um ecossistema sustentável.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-number">03</div>
+                        <h3 data-i18n="about_values_title">Valores</h3>
+                        <p data-i18n="about_values_desc">Sustentabilidade, transparência, inclusão social e inovação tecnológica para o desenvolvimento de Angola.</p>
+                    </div>
+                </div>
+
+                <div class="project-status-section">
+                    <h3 data-i18n="status_title">Status do Desenvolvimento</h3>
+                    <div class="status-grid">
+                        <div class="status-card">
+                            <div class="status-icon">🔬</div>
+                            <h4 data-i18n="status_research_title">Pesquisa de Mercado</h4>
+                            <p data-i18n="status_research_desc">Análise das necessidades e oportunidades em Luanda</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="status-icon">🤝</div>
+                            <h4 data-i18n="status_partners_title">Parcerias</h4>
+                            <p data-i18n="status_partners_desc">Buscando parceiros locais e internacionais</p>
+                        </div>
+                        <div class="status-card">
+                            <div class="status-icon">📱</div>
+                            <h4 data-i18n="status_dev_title">Desenvolvimento</h4>
+                            <p data-i18n="status_dev_desc">Planejamento da plataforma digital</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats section" id="stats">
+            <div class="container">
+                <div class="stats-disclaimer">
+                    <p data-i18n="stats_disclaimer">📋 Projeto em desenvolvimento - Estes são nossos objetivos para os próximos 2 anos</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">2.500</div>
+                        <div class="stat-label" data-i18n="stat_families_label">Famílias Beneficiadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50</div>
+                        <div class="stat-label" data-i18n="stat_tonnes_label">Toneladas de Resíduos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">180K</div>
+                        <div class="stat-label" data-i18n="stat_credits_label">Kz em Créditos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label" data-i18n="stat_centers_label">Centros em Luanda</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits section" id="benefits">
+            <div class="container">
+                <h2 class="section-title" data-i18n="benefits_title">Transforme Resíduos em Oportunidades Reais</h2>
+                <p class="section-subtitle" data-i18n="benefits_subtitle">Descubra como participar do EcoValor pode mudar sua vida e a de sua comunidade</p>
+                <div class="benefits-cards">
+                    <div class="benefit-card">
+                        <div class="benefit-number">01</div>
+                        <h3 data-i18n="benefit1_title">Ganhe Dinheiro Real</h3>
+                        <p data-i18n="benefit1_desc">Transforme garrafas, papel e metal em créditos que podem ser trocados por dinheiro, saldo de telemóvel e produtos essenciais.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-number">02</div>
+                        <h3 data-i18n="benefit2_title">Ajude o Meio Ambiente</h3>
+                        <p data-i18n="benefit2_desc">Contribua para a redução do lixo em Luanda e participe da construção de uma cidade mais limpa e sustentável.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-number">03</div>
+                        <h3 data-i18n="benefit3_title">Inspire Sua Comunidade</h3>
+                        <p data-i18n="benefit3_desc">Seja um exemplo e ajude a conscientizar vizinhos, amigos e família sobre a importância da reciclagem.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-number">04</div>
+                        <h3 data-i18n="benefit4_title">Acesse Benefícios Exclusivos</h3>
+                        <p data-i18n="benefit4_desc">Descontos em combustível, produtos de primeira necessidade e serviços essenciais para sua família.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works section" id="how">
+            <div class="container">
+                <h2 class="section-title" data-i18n="how_title">Reciclar Nunca Foi Tão Fácil e Recompensador</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3 data-i18n="step1_title">CADASTRE-SE</h3>
+                        <p data-i18n="step1_desc">Registe-se gratuitamente</p>
+                        <ul class="step-details">
+                            <li data-i18n="step1_detail1">Download da app EcoValor ou acesse via web</li>
+                            <li data-i18n="step1_detail2">Cadastro rápido com número de telefone</li>
+                            <li data-i18n="step1_detail3">Receba seu QR Code personalizado</li>
+                            <li data-i18n="step1_detail4">Tempo: 2 minutos</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3 data-i18n="step2_title">ENTREGUE RESÍDUOS</h3>
+                        <p data-i18n="step2_desc">Leve seus materiais aos centros</p>
+                        <ul class="step-details">
+                            <li data-i18n="step2_detail1">Plástico, papel, vidro e metal limpos</li>
+                            <li data-i18n="step2_detail2">Apresente seu QR Code</li>
+                            <li data-i18n="step2_detail3">Nossa equipe pesa e classifica</li>
+                            <li data-i18n="step2_detail4">Localização: 8 centros em Luanda</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3 data-i18n="step3_title">GANHE CRÉDITOS</h3>
+                        <p data-i18n="step3_desc">Cada material tem seu valor</p>
+                        <ul class="step-details">
+                            <li data-i18n="step3_detail1">Plástico: 50 créditos/kg</li>
+                            <li data-i18n="step3_detail2">Papel: 30 créditos/kg</li>
+                            <li data-i18n="step3_detail3">Vidro: 40 créditos/kg</li>
+                            <li data-i18n="step3_detail4">Metal: 80 créditos/kg</li>
+                            <li data-i18n="step3_detail5">Conversão: 100 créditos = 100 Kz</li>
+                        </ul>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h3 data-i18n="step4_title">TROQUE POR BENEFÍCIOS</h3>
+                        <p data-i18n="step4_desc">Use seus créditos como preferir</p>
+                        <ul class="step-details">
+                            <li data-i18n="step4_detail1">Saldo para telemóvel (Unitel, Africel)</li>
+                            <li data-i18n="step4_detail2">Compras no No Kero e Candando</li>
+                            <li data-i18n="step4_detail3">Internet TV Cabo</li>
+                            <li data-i18n="step4_detail4">Dinheiro via PayPay</li>
+                            <li data-i18n="step4_detail5">Disponível: 24h por dia</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="materials section" id="materials">
+            <div class="container">
+                <h2 class="section-title" data-i18n="materials_title">Transforme Estes Materiais em Dinheiro</h2>
+                <div class="materials-grid">
+                    <div class="material-card">
+                        <h4 data-i18n="material_plastic_title">PLÁSTICO - 50 Créditos/kg</h4>
+                        <div class="material-details">
+                            <h5 data-i18n="material_what_accept">O que aceitar:</h5>
+                            <ul>
+                                <li data-i18n="material_plastic_accept1">Garrafas PET (água, refrigerante, sumo)</li>
+                                <li data-i18n="material_plastic_accept2">Embalagens de produtos de limpeza</li>
+                                <li data-i18n="material_plastic_accept3">Sacolas plásticas limpas</li>
+                                <li data-i18n="material_plastic_accept4">Tampas de garrafas</li>
+                                <li data-i18n="material_plastic_accept5">Embalagens de iogurte e manteiga</li>
+                            </ul>
+                            <h5 data-i18n="material_how_prepare">Como preparar:</h5>
+                            <ul>
+                                <li data-i18n="material_plastic_prepare1">Retire rótulos quando possível</li>
+                                <li data-i18n="material_plastic_prepare2">Lave rapidamente com água</li>
+                                <li data-i18n="material_plastic_prepare3">Retire tampas metálicas</li>
+                                <li data-i18n="material_plastic_prepare4">Seque ao sol antes de entregar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material-card">
+                        <h4 data-i18n="material_paper_title">PAPEL - 30 Créditos/kg</h4>
+                        <div class="material-details">
+                            <h5 data-i18n="material_what_accept">O que aceitar:</h5>
+                            <ul>
+                                <li data-i18n="material_paper_accept1">Jornais e revistas</li>
+                                <li data-i18n="material_paper_accept2">Papelão limpo</li>
+                                <li data-i18n="material_paper_accept3">Folhas de caderno e livros</li>
+                                <li data-i18n="material_paper_accept4">Embalagens de papel</li>
+                                <li data-i18n="material_paper_accept5">Caixas de cereais (sem plástico)</li>
+                            </ul>
+                            <h5 data-i18n="material_how_prepare">Como preparar:</h5>
+                            <ul>
+                                <li data-i18n="material_paper_prepare1">Retire grampos e clipes</li>
+                                <li data-i18n="material_paper_prepare2">Não misture com papel higiênico</li>
+                                <li data-i18n="material_paper_prepare3">Mantenha seco e limpo</li>
+                                <li data-i18n="material_paper_prepare4">Dobre para ocupar menos espaço</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material-card">
+                        <h4 data-i18n="material_glass_title">VIDRO - 40 Créditos/kg</h4>
+                        <div class="material-details">
+                            <h5 data-i18n="material_what_accept">O que aceitar:</h5>
+                            <ul>
+                                <li data-i18n="material_glass_accept1">Garrafas de bebidas</li>
+                                <li data-i18n="material_glass_accept2">Frascos de conservas</li>
+                                <li data-i18n="material_glass_accept3">Vidros de perfume (vazios)</li>
+                                <li data-i18n="material_glass_accept4">Potes de geleia</li>
+                                <li data-i18n="material_glass_accept5">Copos e taças quebrados</li>
+                            </ul>
+                            <h5 data-i18n="material_how_prepare">Como preparar:</h5>
+                            <ul>
+                                <li data-i18n="material_glass_prepare1">Retire tampas e rótulos</li>
+                                <li data-i18n="material_glass_prepare2">Lave com água e sabão</li>
+                                <li data-i18n="material_glass_prepare3">Embale com cuidado</li>
+                                <li data-i18n="material_glass_prepare4">Separe por cor quando possível</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="material-card">
+                        <h4 data-i18n="material_metal_title">METAL - 80 Créditos/kg</h4>
+                        <div class="material-details">
+                            <h5 data-i18n="material_what_accept">O que aceitar:</h5>
+                            <ul>
+                                <li data-i18n="material_metal_accept1">Latas de refrigerante</li>
+                                <li data-i18n="material_metal_accept2">Latas de conserva</li>
+                                <li data-i18n="material_metal_accept3">Tampas metálicas</li>
+                                <li data-i18n="material_metal_accept4">Fios de cobre</li>
+                                <li data-i18n="material_metal_accept5">Alumínio em geral</li>
+                            </ul>
+                            <h5 data-i18n="material_how_prepare">Como preparar:</h5>
+                            <ul>
+                                <li data-i18n="material_metal_prepare1">Lave e seque completamente</li>
+                                <li data-i18n="material_metal_prepare2">Retire rótulos de papel</li>
+                                <li data-i18n="material_metal_prepare3">Amasse latas para economizar espaço</li>
+                                <li data-i18n="material_metal_prepare4">Separe ferro de alumínio</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collection-points section" id="points">
+            <div class="container">
+                <h2 class="section-title" data-i18n="points_title">Encontre o Centro Mais Próximo</h2>
+                <p class="section-subtitle" data-i18n="points_sub">LUANDA - 8 CENTROS PLANEJADOS</p>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <h4 data-i18n="map_development_title">Mapa em Desenvolvimento</h4>
+                        <p data-i18n="map_development_desc">Estamos mapeando os melhores locais em Luanda para instalar nossos centros. Em breve você poderá ver todos os centros disponíveis aqui.</p>
+                    </div>
+                </div>
+                <div class="points-list">
+                    <div class="point-card planned">
+                        <div class="point-info">
+                            <h5 data-i18n="center1_name">Centro Maianga</h5>
+                            <p data-i18n="center1_address">Rua Amílcar Cabral, 234 - Maianga • <span data-i18n="center1_schedule">Segunda a Sábado, 7h às 17h</span></p>
+                            <p class="point-specialty" data-i18n="center1_specialty">Especialidade: Todos os materiais + Educação ambiental</p>
+                        </div>
+                        <div class="point-status" data-i18n="status_planned">Planejado</div>
+                    </div>
+                    <div class="point-card planned">
+                        <div class="point-info">
+                            <h5 data-i18n="center2_name">Centro Sambizanga</h5>
+                            <p data-i18n="center2_address">Av. 21 de Janeiro, 156 - Sambizanga • <span data-i18n="center2_schedule">Segunda a Sexta, 8h às 16h</span></p>
+                            <p class="point-specialty" data-i18n="center2_specialty">Especialidade: Plástico e papel</p>
+                        </div>
+                        <div class="point-status" data-i18n="status_planned">Planejado</div>
+                    </div>
+                    <div class="point-card planned">
+                        <div class="point-info">
+                            <h5 data-i18n="center3_name">Centro Rangel</h5>
+                            <p data-i18n="center3_address">Rua da Missão, 67 - Rangel • <span data-i18n="center3_schedule">Terça a Sábado, 7h30 às 17h30</span></p>
+                            <p class="point-specialty" data-i18n="center3_specialty">Especialidade: Vidro e metal</p>
+                        </div>
+                        <div class="point-status" data-i18n="status_planned">Planejado</div>
+                    </div>
+                    <div class="point-card planned">
+                        <div class="point-info">
+                            <h5 data-i18n="center4_name">Centro Cazenga</h5>
+                            <p data-i18n="center4_address">Rua dos Coqueiros, 89 - Cazenga • <span data-i18n="center4_schedule">Segunda a Sábado, 8h às 16h</span></p>
+                            <p class="point-specialty" data-i18n="center4_specialty">Especialidade: Todos os materiais</p>
+                        </div>
+                        <div class="point-status" data-i18n="status_planned">Planejado</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <h2 class="section-title" data-i18n="testimonials_title">Histórias de Transformação</h2>
+                <p class="section-subtitle" data-i18n="testimonials_sub">Exemplos de como o EcoValor pode impactar a vida das pessoas em Luanda</p>
+                <div class="testimonials-list">
+                    <div class="testimonial example">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Exemplo" class="testimonial-avatar">
+                        <div>
+                            <h5 data-i18n="testimonial1_name">Exemplo: Maria Santos, 34 anos - Sambizanga</h5>
+                            <p data-i18n="testimonial1_text">"Comecei a juntar garrafas plásticas da vizinhança. No primeiro mês, consegui 45.000 Kz em créditos. Agora pago a internet dos meus filhos e ainda sobra para comprar no No Kero. O EcoValor mudou nossa vida!"</p>
+                            <div class="testimonial-impact">
+                                <h6 data-i18n="testimonial1_impact_title">Impacto de Maria:</h6>
+                                <ul>
+                                    <li data-i18n="testimonial1_impact1">3 meses participando</li>
+                                    <li data-i18n="testimonial1_impact2">156 kg de plástico entregues</li>
+                                    <li data-i18n="testimonial1_impact3">187.000 Kz em créditos ganhos</li>
+                                    <li data-i18n="testimonial1_impact4">8 vizinhos mobilizados</li>
+                                </ul>
+                            </div>
+                            <span class="example-tag" data-i18n="example_tag">Exemplo de impacto futuro</span>
+                        </div>
+                    </div>
+                    <div class="testimonial example">
+                        <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Exemplo" class="testimonial-avatar">
+                        <div>
+                            <h5 data-i18n="testimonial2_name">Exemplo: João Miguel, 28 anos - Viana</h5>
+                            <p data-i18n="testimonial2_text">"Trabalho como catador independente. Antes vendia direto às recicladoras por pouco dinheiro. Com o EcoValor, ganho 40% mais e ainda recebo na hora via PayPay. Além disso, meus filhos aprenderam sobre meio ambiente!"</p>
+                            <div class="testimonial-impact">
+                                <h6 data-i18n="testimonial2_impact_title">Impacto de João:</h6>
+                                <ul>
+                                    <li data-i18n="testimonial2_impact1">6 meses participando</li>
+                                    <li data-i18n="testimonial2_impact2">890 kg de materiais diversos</li>
+                                    <li data-i18n="testimonial2_impact3">425.000 Kz em créditos ganhos</li>
+                                    <li data-i18n="testimonial2_impact4">Renda mensal aumentou 40%</li>
+                                </ul>
+                            </div>
+                            <span class="example-tag" data-i18n="example_tag">Exemplo de impacto futuro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="register section" id="register">
+            <div class="container">
+                <h2 class="section-title1" data-i18n="register_title">Junte-se ao Desenvolvimento</h2>
+                <p class="section-subtitle" data-i18n="register_sub">Ajude-nos a construir esta solução para Luanda! Cadastre seu interesse e receba atualizações sobre o progresso do projeto.</p>
+                <div class="register-options">
+                    <div class="register-option">
+                        <h4 data-i18n="register_interest_title">Lista de Interesse</h4>
+                        <p data-i18n="register_interest_desc">Cadastre-se para receber notícias sobre o lançamento e participar do piloto.</p>
+                        <form class="interest-form">
+                            <input type="email" data-i18n-placeholder="form_email" placeholder="Seu e-mail" required>
+                            <input type="text" data-i18n-placeholder="form_name" placeholder="Seu nome" required>
+                            <select required>
+                                <option value="" data-i18n="form_select_neighborhood">Selecione seu bairro</option>
+                                <option value="centro" data-i18n="form_centro">Centro de Luanda</option>
+                                <option value="talatona" data-i18n="form_talatona">Talatona</option>
+                                <option value="kilamba" data-i18n="form_kilamba">Kilamba</option>
+                                <option value="outro" data-i18n="form_outro">Outro</option>
+                            </select>
+                            <button type="submit" class="btn-primary" data-i18n="btn_register_interest">Cadastrar Interesse</button>
+                        </form>
+                    </div>
+                    <div class="register-option">
+                        <h4 data-i18n="register_partner_title">Seja um Parceiro</h4>
+                        <p data-i18n="register_partner_desc">Tem um local ou quer apoiar o projeto? Entre em contato conosco.</p>
+                        <a href="#contact" class="btn-secondary" data-i18n="btn_contact_us">Falar Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-i18n="contact_title">Fale Connosco</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4 data-i18n="contact_phone_title">Central de Atendimento</h4>
+                        <p>+244 923 ECO-VALOR (326-8256)</p>
+                        <p>WhatsApp: +244 923 456 789</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-i18n="contact_email_title">E-mail</h4>
+                        <p>info@ecovalor.ao</p>
+                        <p>Website: www.ecovalor.ao</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-i18n="contact_address_title">Endereço Corporativo</h4>
+                        <p>EcoValor Angola, Lda.</p>
+                        <p>Rua Amílcar Cabral, 234 - Sala 12</p>
+                        <p>Bairro Maianga, Luanda - Angola</p>
+                        <p>CEP: 1000-043</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4 data-i18n="contact_hours_title">Horário de Atendimento</h4>
+                        <p data-i18n="contact_hours_weekdays">Segunda a Sexta: 8h às 17h</p>
+                        <p data-i18n="contact_hours_saturday">Sábado: 8h às 12h</p>
+                        <p data-i18n="contact_hours_whatsapp">Plantão WhatsApp: 24h todos os dias</p>
+                    </div>
+                </div>
+                
+                <div class="social-media">
+                    <h3 data-i18n="social_title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook: @EcoValorAngola</a>
+                        <a href="#" class="social-link">Instagram: @ecovalor_ao</a>
+                        <a href="#" class="social-link">YouTube: EcoValor Angola</a>
+                        <a href="#" class="social-link">TikTok: @ecovalor_oficial</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-logo" data-i18n="logo">EcoValor</div>
+            <div class="footer-links">
+                <a href="#home" data-i18n="nav_home">Início</a>
+                <a href="#how" data-i18n="nav_how">Como Funciona</a>
+                <a href="#materials" data-i18n="nav_materials">Materiais</a>
+                <a href="#contact" data-i18n="nav_contact">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <span data-i18n="footer_contact">Contato:</span>
+                <a href="mailto:info@ecovalor.ao">info@ecovalor.ao</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola.</p>
+            <p class="footer-status" data-i18n="footer_status">Status: Fase de pesquisa e validação</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
