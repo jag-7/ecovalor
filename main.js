@@ -464,14 +464,46 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Menu mobile
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMobile = document.querySelector('.nav-mobile');
     
-    if (mobileMenuBtn && navLinks) {
-        mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            const isExpanded = navLinks.classList.contains('active');
-            mobileMenuBtn.setAttribute('aria-expanded', isExpanded);
+    if (mobileMenuToggle && navMobile) {
+        mobileMenuToggle.addEventListener('click', function() {
+            // Toggle menu mobile
+            navMobile.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+            
+            // Atualizar aria-expanded
+            const isExpanded = navMobile.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+            
+            // Prevenir scroll quando menu está aberto
+            if (isExpanded) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Fechar menu ao clicar em um link
+        const mobileLinks = navMobile.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMobile.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', function(event) {
+            if (!mobileMenuToggle.contains(event.target) && !navMobile.contains(event.target)) {
+                navMobile.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
         });
     }
 });

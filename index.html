@@ -14,27 +14,58 @@
 </head>
 <body>
     <header class="header">
-            <div class="container header-flex">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
                 <div class="logo" data-i18n="logo">EcoValor</div>
-                <nav class="nav">
-                    <ul class="nav-links">
+                
+                <!-- Navegação Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
                         <li><a href="#home" data-i18n="nav_home">Início</a></li>
                         <li><a href="#how" data-i18n="nav_how">Como Funciona</a></li>
                         <li><a href="#materials" data-i18n="nav_materials">Materiais</a></li>
                         <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
                     </ul>
                 </nav>
+                
+                <!-- Ações do Header -->
                 <div class="header-actions">
-                    <button class="btn-login" data-i18n="btn_login">Entrar</button>
-                    <button class="btn-register" data-i18n="btn_register">Cadastrar</button>
+                    <!-- Seletor de Idioma -->
                     <div class="lang-switcher">
                         <button id="lang-pt" class="lang-btn active">PT</button>
                         <button id="lang-en" class="lang-btn">EN</button>
                     </div>
+                    
+                    <!-- Botões de Ação -->
+                    <button class="btn-login" data-i18n="btn_login">Entrar</button>
+                    <button class="btn-register" data-i18n="btn_register">Cadastrar</button>
                 </div>
-                <button class="mobile-menu-btn" aria-expanded="false" aria-label="Toggle menu">
-                    <span class="hamburger"></span>
+                
+                <!-- Botão Menu Mobile -->
+                <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
                 </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <ul class="mobile-menu">
+                    <li><a href="#home" data-i18n="nav_home">Início</a></li>
+                    <li><a href="#how" data-i18n="nav_how">Como Funciona</a></li>
+                    <li><a href="#materials" data-i18n="nav_materials">Materiais</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                
+                <!-- Ações Mobile -->
+                <div class="mobile-actions">
+                    <button class="btn-login-mobile" data-i18n="btn_login">Entrar</button>
+                    <button class="btn-register-mobile" data-i18n="btn_register">Cadastrar</button>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero" id="home">
