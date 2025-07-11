@@ -1772,27 +1772,27 @@ main {
     }
 
     .material-card h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .point-info h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .testimonial h5 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .register-option h4 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contact-item h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .social-media h3 {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 } 
 
@@ -2061,5 +2061,751 @@ main {
     .social-link {
         padding: 0.8rem 1.2rem;
         font-size: 0.9rem;
+    }
+} 
+
+/* Media Queries para diferentes resoluções */
+
+/* Para 720p (1280x720) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1100px;
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        max-width: 600px;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .benefits-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .materials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .points-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .testimonials-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .register-options {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Para tablets e telas médias (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .benefits-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .materials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .points-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Para 768px (tablets) */
+@media (max-width: 768px) {
+    .header-flex {
+        height: 70px;
+        gap: 1rem;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+    
+    .nav {
+        display: none;
+    }
+    
+    .header-actions {
+        gap: 0.5rem;
+    }
+    
+    .btn-login,
+    .btn-register {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .lang-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        position: relative;
+        z-index: 1001;
+    }
+    
+    .mobile-menu-btn .hamburger,
+    .mobile-menu-btn .hamburger::before,
+    .mobile-menu-btn .hamburger::after {
+        width: 25px;
+        height: 3px;
+        background: var(--primary);
+        transition: var(--transition);
+        display: block;
+    }
+    
+    .mobile-menu-btn .hamburger::before,
+    .mobile-menu-btn .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+    }
+    
+    .mobile-menu-btn .hamburger::before {
+        top: -8px;
+    }
+    
+    .mobile-menu-btn .hamburger::after {
+        bottom: -8px;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .stats-grid,
+    .about-grid,
+    .benefits-cards,
+    .steps,
+    .materials-grid,
+    .points-list,
+    .testimonials-list,
+    .register-options,
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-card,
+    .benefit-card,
+    .step,
+    .material-card,
+    .point-card,
+    .testimonial,
+    .register-option,
+    .contact-item {
+        padding: 1.5rem;
+    }
+    
+    .about-number,
+    .benefit-number,
+    .step-number {
+        font-size: 2.5rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .about-card h3,
+    .benefit-card h3,
+    .step h3 {
+        font-size: 1.3rem;
+    }
+    
+    .status-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .footer-flex {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1.5rem;
+    }
+    
+    .step {
+        padding: 1.5rem;
+    }
+    
+    .material-card {
+        padding: 1.5rem;
+    }
+    
+    .register-option {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 1.5rem;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .social-link {
+        text-align: center;
+    }
+}
+
+/* Para 480p (854x480) e smartphones pequenos */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 0.8rem;
+    }
+    
+    .header-flex {
+        height: 60px;
+        gap: 0.5rem;
+    }
+    
+    .logo {
+        font-size: 1.4rem;
+    }
+    
+    .btn-login,
+    .btn-register {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .lang-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+    
+    .hero-content p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        line-height: 1.3;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .stat-label {
+        font-size: 0.85rem;
+    }
+    
+    .step-number {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .step h3 {
+        font-size: 1.1rem;
+    }
+    
+    .material-card h4 {
+        font-size: 1rem;
+    }
+    
+    .point-info h5 {
+        font-size: 1rem;
+    }
+    
+    .testimonial h5 {
+        font-size: 1rem;
+    }
+    
+    .register-option h4 {
+        font-size: 1.1rem;
+    }
+    
+    .contact-item h4 {
+        font-size: 1rem;
+    }
+    
+    .social-media h3 {
+        font-size: 1.1rem;
+    }
+    
+    .about-card,
+    .benefit-card,
+    .step,
+    .material-card,
+    .point-card,
+    .testimonial,
+    .register-option,
+    .contact-item {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        padding: 2rem 0.5rem;
+    }
+    
+    .stats-disclaimer p {
+        font-size: 0.85rem;
+    }
+    
+    .step-details li {
+        font-size: 0.9rem;
+    }
+    
+    .material-details h5 {
+        font-size: 0.95rem;
+    }
+    
+    .material-details li {
+        font-size: 0.85rem;
+    }
+    
+    .testimonial-impact h6 {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-impact li {
+        font-size: 0.8rem;
+    }
+    
+    .footer-bottom {
+        padding: 1rem 0;
+    }
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Para telas muito pequenas (320px) */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 0.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.85rem;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .step-number {
+        font-size: 1.8rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .about-card,
+    .benefit-card,
+    .step,
+    .material-card,
+    .point-card,
+    .testimonial,
+    .register-option,
+    .contact-item {
+        padding: 0.8rem;
+    }
+} 
+
+/* Melhorias para formulários e elementos interativos */
+
+.interest-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.interest-form input,
+.interest-form select {
+    padding: 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: var(--transition);
+    background: var(--white);
+}
+
+.interest-form input:focus,
+.interest-form select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 184, 148, 0.1);
+}
+
+/* Melhorias para responsividade de formulários */
+@media (max-width: 768px) {
+    .interest-form {
+        gap: 0.8rem;
+    }
+    
+    .interest-form input,
+    .interest-form select {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .interest-form {
+        gap: 0.6rem;
+    }
+    
+    .interest-form input,
+    .interest-form select {
+        padding: 0.7rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Melhorias para cards e elementos visuais */
+@media (max-width: 768px) {
+    .about-card,
+    .benefit-card,
+    .step,
+    .material-card,
+    .point-card,
+    .testimonial,
+    .register-option,
+    .contact-item {
+        margin-bottom: 1rem;
+    }
+    
+    .step-details {
+        margin-top: 1rem;
+    }
+    
+    .step-details li {
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .material-details {
+        margin-top: 1rem;
+    }
+    
+    .material-details h5 {
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .material-details li {
+        margin-bottom: 0.3rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .step-details li {
+        font-size: 0.85rem;
+    }
+    
+    .material-details h5 {
+        font-size: 0.9rem;
+    }
+    
+    .material-details li {
+        font-size: 0.8rem;
+    }
+    
+    .testimonial-impact {
+        margin-top: 1rem;
+    }
+    
+    .testimonial-impact h6 {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .testimonial-impact li {
+        font-size: 0.75rem;
+        margin-bottom: 0.2rem;
+    }
+}
+
+/* Melhorias para navegação mobile */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        transform: translateX(0);
+    }
+    
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+        border-radius: var(--radius);
+        background: var(--white);
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+    }
+    
+    .nav-links a:hover {
+        background: var(--primary);
+        color: var(--white);
+        transform: translateY(-2px);
+    }
+}
+
+/* Melhorias para estatísticas */
+@media (max-width: 768px) {
+    .stats-disclaimer {
+        margin-bottom: 2rem;
+    }
+    
+    .stats-disclaimer p {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 1rem;
+        background: rgba(0, 184, 148, 0.1);
+        border-radius: var(--radius);
+        border-left: 4px solid var(--primary);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-disclaimer p {
+        font-size: 0.8rem;
+        padding: 0.8rem;
+    }
+    
+    .stat-card {
+        text-align: center;
+    }
+    
+    .stat-number {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
     }
 } 
