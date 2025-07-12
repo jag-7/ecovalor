@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - EcoValor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <meta name="description" content="Faça login na sua conta EcoValor e continue reciclando para ganhar recompensas!" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" data-i18n="logo" href="index.html">EcoValor</div>
+                
+                <!-- Navegação Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                        <li><a href="index.html#how" data-i18n="nav_how">Como Funciona</a></li>
+                        <li><a href="index.html#materials" data-i18n="nav_materials">Materiais</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav_contact">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Ações do Header -->
+                <div class="header-actions">
+                    <!-- Seletor de Idioma -->
+                    <div class="lang-switcher">
+                        <button id="lang-pt" class="lang-btn active">PT</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                    
+                    <!-- Botões de Ação -->
+                    <button class="btn-login active" data-i18n="btn_login">Entrar</button>
+                    <a href="register.html" class="btn-register" data-i18n="btn_register">Cadastrar</a>
+                </div>
+                
+                <!-- Botão Menu Mobile -->
+                <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <ul class="mobile-menu">
+                    <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                    <li><a href="index.html#how" data-i18n="nav_how">Como Funciona</a></li>
+                    <li><a href="index.html#materials" data-i18n="nav_materials">Materiais</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                
+                <!-- Seletor de Idioma Mobile -->
+                <div class="mobile-lang-switcher">
+                    <button id="lang-pt-mobile" class="lang-btn-mobile active">PT</button>
+                    <button id="lang-en-mobile" class="lang-btn-mobile">EN</button>
+                </div>
+                
+                <!-- Ações Mobile -->
+                <div class="mobile-actions">
+                    <button class="btn-login-mobile active" data-i18n="btn_login">Entrar</button>
+                    <a href="register.html" class="btn-register-mobile" data-i18n="btn_register">Cadastrar</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1 data-i18n="login_title">Bem-vindo de volta!</h1>
+                    <p data-i18n="login_subtitle">Faça login na sua conta EcoValor</p>
+                </div>
+
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email_label">E-mail</label>
+                        <input type="email" id="email" name="email" required data-i18n-placeholder="form_email_placeholder" placeholder="Seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" data-i18n="form_password_label">Senha</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" required data-i18n-placeholder="form_password_placeholder" placeholder="Sua senha">
+                            <button type="button" class="password-toggle" aria-label="Mostrar senha">
+                                <span class="eye-icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span class="checkmark"></span>
+                            <span data-i18n="login_remember">Lembrar de mim</span>
+                        </label>
+                        <a href="#" class="forgot-link" data-i18n="login_forgot">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit" class="btn-auth-primary" data-i18n="btn_login_submit">Entrar</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span data-i18n="login_or">ou</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn-social btn-google" data-i18n="login_google">
+                        <span class="social-icon">🔍</span>
+                        Continuar com Google
+                    </button>
+                    <button class="btn-social btn-facebook" data-i18n="login_facebook">
+                        <span class="social-icon">📘</span>
+                        Continuar com Facebook
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p data-i18n="login_no_account">Não tem uma conta?</p>
+                    <a href="register.html" class="auth-link" data-i18n="login_create_account">Criar conta</a>
+                </div>
+            </div>
+
+            <div class="auth-info">
+                <div class="info-content">
+                    <h2 data-i18n="login_info_title">Por que fazer login?</h2>
+                    <ul class="info-list">
+                        <li data-i18n="login_info_1">Acompanhe seus créditos em tempo real</li>
+                        <li data-i18n="login_info_2">Histórico completo de reciclagem</li>
+                        <li data-i18n="login_info_3">Receba notificações de novos benefícios</li>
+                        <li data-i18n="login_info_4">Acesso exclusivo a promoções</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-logo" data-i18n="logo">EcoValor</div>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="nav_home">Início</a>
+                <a href="index.html#how" data-i18n="nav_how">Como Funciona</a>
+                <a href="index.html#materials" data-i18n="nav_materials">Materiais</a>
+                <a href="index.html#contact" data-i18n="nav_contact">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <span data-i18n="footer_contact">Contato:</span>
+                <a href="mailto:info@ecovalor.ao">info@ecovalor.ao</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola.</p>
+            <p class="footer-status" data-i18n="footer_status">Status: Fase de pesquisa e validação</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html> 

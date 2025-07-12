@@ -1,6 +1,6 @@
 // Sistema de Internacionalização
 const translations = {
-    pt: {
+  pt: {
         // Logo
         logo: "EcoValor",
         
@@ -207,7 +207,61 @@ const translations = {
         // Footer
         footer_contact: "Contato:",
         footer_status: "Status: Fase de pesquisa e validação",
-        footer_copyright: "© 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola."
+        footer_copyright: "© 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola.",
+        
+        // Login Page
+        login_title: "Bem-vindo de volta!",
+        login_subtitle: "Faça login na sua conta EcoValor",
+        form_email_label: "E-mail",
+        form_email_placeholder: "Seu e-mail",
+        form_password_label: "Senha",
+        form_password_placeholder: "Sua senha",
+        login_remember: "Lembrar de mim",
+        login_forgot: "Esqueceu a senha?",
+        btn_login_submit: "Entrar",
+        login_or: "ou",
+        login_google: "Continuar com Google",
+        login_facebook: "Continuar com Facebook",
+        login_no_account: "Não tem uma conta?",
+        login_create_account: "Criar conta",
+        login_info_title: "Por que fazer login?",
+        login_info_1: "Acompanhe seus créditos em tempo real",
+        login_info_2: "Histórico completo de reciclagem",
+        login_info_3: "Receba notificações de novos benefícios",
+        login_info_4: "Acesso exclusivo a promoções",
+        
+        // Register Page
+        register_title: "Junte-se ao EcoValor!",
+        register_subtitle: "Crie sua conta e comece a reciclar",
+        form_first_name_label: "Nome",
+        form_first_name_placeholder: "Seu nome",
+        form_last_name_label: "Sobrenome",
+        form_last_name_placeholder: "Seu sobrenome",
+        form_phone_label: "Telefone",
+        form_phone_placeholder: "+244 923 456 789",
+        form_neighborhood_label: "Bairro",
+        form_maianga: "Maianga",
+        form_sambizanga: "Sambizanga",
+        form_rangel: "Rangel",
+        form_cazenga: "Cazenga",
+        form_viana: "Viana",
+        form_confirm_password_label: "Confirmar Senha",
+        form_confirm_password_placeholder: "Confirme sua senha",
+        register_terms: "Concordo com os Termos de Uso e Política de Privacidade",
+        register_newsletter: "Quero receber notícias e promoções",
+        btn_register_submit: "Criar Conta",
+        register_or: "ou",
+        register_google: "Cadastrar com Google",
+        register_facebook: "Cadastrar com Facebook",
+        register_have_account: "Já tem uma conta?",
+        register_login: "Fazer login",
+        register_info_title: "Benefícios do cadastro",
+        register_info_1: "QR Code personalizado para identificação",
+        register_info_2: "Acompanhamento de créditos em tempo real",
+        register_info_3: "Histórico completo de reciclagem",
+        register_info_4: "Notificações de novos centros próximos",
+        register_info_5: "Acesso a promoções exclusivas",
+        register_info_6: "Suporte prioritário"
     },
     
     en: {
@@ -417,7 +471,61 @@ const translations = {
         // Footer
         footer_contact: "Contact:",
         footer_status: "Status: Research and validation phase",
-        footer_copyright: "© 2025 EcoValor Angola. Project under development for Luanda, Angola."
+        footer_copyright: "© 2025 EcoValor Angola. Project under development for Luanda, Angola.",
+        
+        // Login Page
+        login_title: "Welcome back!",
+        login_subtitle: "Login to your EcoValor account",
+        form_email_label: "Email",
+        form_email_placeholder: "Your email",
+        form_password_label: "Password",
+        form_password_placeholder: "Your password",
+        login_remember: "Remember me",
+        login_forgot: "Forgot password?",
+        btn_login_submit: "Login",
+        login_or: "or",
+        login_google: "Continue with Google",
+        login_facebook: "Continue with Facebook",
+        login_no_account: "Don't have an account?",
+        login_create_account: "Create account",
+        login_info_title: "Why login?",
+        login_info_1: "Track your credits in real time",
+        login_info_2: "Complete recycling history",
+        login_info_3: "Receive notifications of new benefits",
+        login_info_4: "Exclusive access to promotions",
+        
+        // Register Page
+        register_title: "Join EcoValor!",
+        register_subtitle: "Create your account and start recycling",
+        form_first_name_label: "First Name",
+        form_first_name_placeholder: "Your first name",
+        form_last_name_label: "Last Name",
+        form_last_name_placeholder: "Your last name",
+        form_phone_label: "Phone",
+        form_phone_placeholder: "+244 923 456 789",
+        form_neighborhood_label: "Neighborhood",
+        form_maianga: "Maianga",
+        form_sambizanga: "Sambizanga",
+        form_rangel: "Rangel",
+        form_cazenga: "Cazenga",
+        form_viana: "Viana",
+        form_confirm_password_label: "Confirm Password",
+        form_confirm_password_placeholder: "Confirm your password",
+        register_terms: "I agree to the Terms of Use and Privacy Policy",
+        register_newsletter: "I want to receive news and promotions",
+        btn_register_submit: "Create Account",
+        register_or: "or",
+        register_google: "Register with Google",
+        register_facebook: "Register with Facebook",
+        register_have_account: "Already have an account?",
+        register_login: "Login",
+        register_info_title: "Registration benefits",
+        register_info_1: "Personalized QR code for identification",
+        register_info_2: "Real-time credit tracking",
+        register_info_3: "Complete recycling history",
+        register_info_4: "Notifications of nearby new centers",
+        register_info_5: "Access to exclusive promotions",
+        register_info_6: "Priority support"
     }
 };
 
@@ -441,11 +549,17 @@ function changeLanguage(lang) {
         }
     });
     
-    // Atualizar botões de idioma
+    // Atualizar botões de idioma desktop
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     document.querySelector(`#lang-${lang}`).classList.add('active');
+    
+    // Atualizar botões de idioma mobile
+    document.querySelectorAll('.lang-btn-mobile').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    document.querySelector(`#lang-${lang}-mobile`).classList.add('active');
     
     // Salvar preferência
     localStorage.setItem('language', lang);
@@ -457,9 +571,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const savedLang = localStorage.getItem('language') || 'pt';
     changeLanguage(savedLang);
     
-    // Event listeners para botões de idioma
+    // Event listeners para botões de idioma desktop
     document.getElementById('lang-pt').addEventListener('click', () => changeLanguage('pt'));
     document.getElementById('lang-en').addEventListener('click', () => changeLanguage('en'));
+    
+    // Event listeners para botões de idioma mobile
+    document.getElementById('lang-pt-mobile').addEventListener('click', () => changeLanguage('pt'));
+    document.getElementById('lang-en-mobile').addEventListener('click', () => changeLanguage('en'));
 });
 
 // Menu mobile

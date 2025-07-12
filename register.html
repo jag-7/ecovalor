@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro - EcoValor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="auth.css" />
+    <meta name="description" content="Cadastre-se no EcoValor e comece a reciclar para ganhar recompensas!" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" data-i18n="logo" href="index.html">EcoValor</div>
+                
+                <!-- Navegação Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                        <li><a href="index.html#how" data-i18n="nav_how">Como Funciona</a></li>
+                        <li><a href="index.html#materials" data-i18n="nav_materials">Materiais</a></li>
+                        <li><a href="index.html#contact" data-i18n="nav_contact">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Ações do Header -->
+                <div class="header-actions">
+                    <!-- Seletor de Idioma -->
+                    <div class="lang-switcher">
+                        <button id="lang-pt" class="lang-btn active">PT</button>
+                        <button id="lang-en" class="lang-btn">EN</button>
+                    </div>
+                    
+                    <!-- Botões de Ação -->
+                    <a href="login.html" class="btn-login" data-i18n="btn_login">Entrar</a>
+                    <button class="btn-register active" data-i18n="btn_register">Cadastrar</button>
+                </div>
+                
+                <!-- Botão Menu Mobile -->
+                <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <ul class="mobile-menu">
+                    <li><a href="index.html" data-i18n="nav_home">Início</a></li>
+                    <li><a href="index.html#how" data-i18n="nav_how">Como Funciona</a></li>
+                    <li><a href="index.html#materials" data-i18n="nav_materials">Materiais</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contato</a></li>
+                </ul>
+                
+                <!-- Seletor de Idioma Mobile -->
+                <div class="mobile-lang-switcher">
+                    <button id="lang-pt-mobile" class="lang-btn-mobile active">PT</button>
+                    <button id="lang-en-mobile" class="lang-btn-mobile">EN</button>
+                </div>
+                
+                <!-- Ações Mobile -->
+                <div class="mobile-actions">
+                    <a href="login.html" class="btn-login-mobile" data-i18n="btn_login">Entrar</a>
+                    <button class="btn-register-mobile active" data-i18n="btn_register">Cadastrar</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1 data-i18n="register_title">Junte-se ao EcoValor!</h1>
+                    <p data-i18n="register_subtitle">Crie sua conta e comece a reciclar</p>
+                </div>
+
+                <form class="auth-form" id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" data-i18n="form_first_name_label">Nome</label>
+                            <input type="text" id="firstName" name="firstName" required data-i18n-placeholder="form_first_name_placeholder" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" data-i18n="form_last_name_label">Sobrenome</label>
+                            <input type="text" id="lastName" name="lastName" required data-i18n-placeholder="form_last_name_placeholder" placeholder="Seu sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email_label">E-mail</label>
+                        <input type="email" id="email" name="email" required data-i18n-placeholder="form_email_placeholder" placeholder="Seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" data-i18n="form_phone_label">Telefone</label>
+                        <input type="tel" id="phone" name="phone" required data-i18n-placeholder="form_phone_placeholder" placeholder="+244 923 456 789">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="neighborhood" data-i18n="form_neighborhood_label">Bairro</label>
+                        <select id="neighborhood" name="neighborhood" required>
+                            <option value="" data-i18n="form_select_neighborhood">Selecione seu bairro</option>
+                            <option value="centro" data-i18n="form_centro">Centro de Luanda</option>
+                            <option value="maianga" data-i18n="form_maianga">Maianga</option>
+                            <option value="sambizanga" data-i18n="form_sambizanga">Sambizanga</option>
+                            <option value="rangel" data-i18n="form_rangel">Rangel</option>
+                            <option value="cazenga" data-i18n="form_cazenga">Cazenga</option>
+                            <option value="talatona" data-i18n="form_talatona">Talatona</option>
+                            <option value="kilamba" data-i18n="form_kilamba">Kilamba</option>
+                            <option value="viana" data-i18n="form_viana">Viana</option>
+                            <option value="outro" data-i18n="form_outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" data-i18n="form_password_label">Senha</label>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" required data-i18n-placeholder="form_password_placeholder" placeholder="Crie uma senha">
+                            <button type="button" class="password-toggle" aria-label="Mostrar senha">
+                                <span class="eye-icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword" data-i18n="form_confirm_password_label">Confirmar Senha</label>
+                        <div class="password-input">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required data-i18n-placeholder="form_confirm_password_placeholder" placeholder="Confirme sua senha">
+                            <button type="button" class="password-toggle" aria-label="Mostrar senha">
+                                <span class="eye-icon">👁️</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span class="checkmark"></span>
+                            <span data-i18n="register_terms">Concordo com os <a href="#" class="terms-link">Termos de Uso</a> e <a href="#" class="terms-link">Política de Privacidade</a></span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter">
+                            <span class="checkmark"></span>
+                            <span data-i18n="register_newsletter">Quero receber notícias e promoções</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-auth-primary" data-i18n="btn_register_submit">Criar Conta</button>
+                </form>
+
+                <div class="auth-divider">
+                    <span data-i18n="register_or">ou</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="btn-social btn-google" data-i18n="register_google">
+                        <span class="social-icon">🔍</span>
+                        Cadastrar com Google
+                    </button>
+                    <button class="btn-social btn-facebook" data-i18n="register_facebook">
+                        <span class="social-icon">📘</span>
+                        Cadastrar com Facebook
+                    </button>
+                </div>
+
+                <div class="auth-footer">
+                    <p data-i18n="register_have_account">Já tem uma conta?</p>
+                    <a href="login.html" class="auth-link" data-i18n="register_login">Fazer login</a>
+                </div>
+            </div>
+
+            <div class="auth-info">
+                <div class="info-content">
+                    <h2 data-i18n="register_info_title">Benefícios do cadastro</h2>
+                    <ul class="info-list">
+                        <li data-i18n="register_info_1">QR Code personalizado para identificação</li>
+                        <li data-i18n="register_info_2">Acompanhamento de créditos em tempo real</li>
+                        <li data-i18n="register_info_3">Histórico completo de reciclagem</li>
+                        <li data-i18n="register_info_4">Notificações de novos centros próximos</li>
+                        <li data-i18n="register_info_5">Acesso a promoções exclusivas</li>
+                        <li data-i18n="register_info_6">Suporte prioritário</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-logo" data-i18n="logo">EcoValor</div>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="nav_home">Início</a>
+                <a href="index.html#how" data-i18n="nav_how">Como Funciona</a>
+                <a href="index.html#materials" data-i18n="nav_materials">Materiais</a>
+                <a href="index.html#contact" data-i18n="nav_contact">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <span data-i18n="footer_contact">Contato:</span>
+                <a href="mailto:info@ecovalor.ao">info@ecovalor.ao</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer_copyright">&copy; 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola.</p>
+            <p class="footer-status" data-i18n="footer_status">Status: Fase de pesquisa e validação</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html> 

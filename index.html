@@ -17,7 +17,7 @@
         <div class="container">
             <div class="header-content">
                 <!-- Logo -->
-                <div class="logo" data-i18n="logo">EcoValor</div>
+                <div class="logo" data-i18n="logo" href="index.html">EcoValor</div>
                 
                 <!-- Navegação Desktop -->
                 <nav class="nav-desktop">
@@ -38,8 +38,8 @@
                     </div>
                     
                     <!-- Botões de Ação -->
-                    <button class="btn-login" data-i18n="btn_login">Entrar</button>
-                    <button class="btn-register" data-i18n="btn_register">Cadastrar</button>
+                    <a href="login.html" class="btn-login" data-i18n="btn_login">Entrar</a>
+                    <a href="register.html" class="btn-register" data-i18n="btn_register">Cadastrar</a>
                 </div>
                 
                 <!-- Botão Menu Mobile -->
@@ -58,6 +58,12 @@
                     <li><a href="#materials" data-i18n="nav_materials">Materiais</a></li>
                     <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
                 </ul>
+                
+                <!-- Seletor de Idioma Mobile -->
+                <div class="mobile-lang-switcher">
+                    <button id="lang-pt-mobile" class="lang-btn-mobile active">PT</button>
+                    <button id="lang-en-mobile" class="lang-btn-mobile">EN</button>
+                </div>
                 
                 <!-- Ações Mobile -->
                 <div class="mobile-actions">
