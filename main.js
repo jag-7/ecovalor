@@ -29,7 +29,7 @@ const translations = {
         
         // Sobre o Projeto
         about_title: "Construindo o Futuro Sustentável de Angola",
-        about_subtitle: "O EcoValor é um projeto em desenvolvimento que visa criar um sistema de recompensas para reciclagem em Luanda, beneficiando tanto o meio ambiente quanto as comunidades locais.",
+        about_subtitle: "O EcoValor é um projeto que visa criar um sistema de recompensas para reciclagem em Luanda, beneficiando tanto o meio ambiente quanto as comunidades locais.",
         about_mission_title: "Missão",
         about_mission_desc: "Transformar resíduos em valor real para as comunidades de Luanda, criando um sistema sustentável de reciclagem com recompensas tangíveis.",
         about_vision_title: "Visão",
@@ -207,7 +207,7 @@ const translations = {
         // Footer
         footer_contact: "Contato:",
         footer_status: "Status: Fase de pesquisa e validação",
-        footer_copyright: "© 2025 EcoValor Angola. Projeto em desenvolvimento para Luanda, Angola.",
+        footer_copyright: "© 2025 Jag Lda. Todos os direitos reservados.",
         
         // Login Page
         login_title: "Bem-vindo de volta!",
@@ -293,7 +293,7 @@ const translations = {
         
         // About Project
         about_title: "Building Angola's Sustainable Future",
-        about_subtitle: "EcoValor is a project under development that aims to create a rewards system for recycling in Luanda, benefiting both the environment and local communities.",
+        about_subtitle: "EcoValor is a project that aims to create a rewards system for recycling in Luanda, benefiting both the environment and local communities.",
         about_mission_title: "Mission",
         about_mission_desc: "Transform waste into real value for Luanda communities, creating a sustainable recycling system with tangible rewards.",
         about_vision_title: "Vision",
@@ -471,7 +471,7 @@ const translations = {
         // Footer
         footer_contact: "Contact:",
         footer_status: "Status: Research and validation phase",
-        footer_copyright: "© 2025 EcoValor Angola. Project under development for Luanda, Angola.",
+        footer_copyright: "© 2025 Jag Ltda. All rights reserved.",
         
         // Login Page
         login_title: "Welcome back!",
