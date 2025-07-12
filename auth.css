@@ -25,7 +25,7 @@
     padding: 3rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-hover);
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -211,15 +211,7 @@
     position: relative;
 }
 
-.auth-divider::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: var(--light-gray);
-}
+
 
 .auth-divider span {
     background: var(--white);
